@@ -145,7 +145,7 @@ steps:
     run: pnpm install --frozen-lockfile
 ```
 
-[pnpm/action-setup](https://github.com/pnpm/action-setup) を利用したセットアップが有名ですが、上記内容の方が依存も減りシンプルになります。
+[pnpm/action-setup](https://github.com/pnpm/action-setup) を利用したセットアップが有名ですが、上記内容の方が依存も減りシンプルです。
 
 ### 2. パッケージ追加時のバージョン固定の強制
 
@@ -231,6 +231,14 @@ renovate の [minimumReleaseAge](https://docs.renovatebot.com/configuration-opti
   "prConcurrentLimit": 1
 }
 ```
+
+## おわりに
+
+長々と手順を解説してきましたが、設定自体は数も少なくシンプルです。記事を見ながら設定してきたほうは[サンプルリポジトリ](https://github.com/tacrew/npm-package-lock-sample)を参照して抜け漏れチェックにご活用ください。
+
+また、CI を利用するほどでもないリポジトリの場合は husky 等を利用して precommit 時に `lint:package` を走らせるなどのアレンジも可能です。例えば zenn の記事を管理する[弊社テンプレ](https://github.com/0xmakase/zenn-articles)ではこのアレンジを採用しています。
+
+リポジトリ内容や開発運用方針に合わせて本記事の内容を部分的にも採用することで、サプライチェーン攻撃の予防に繋がれば幸いです。
 
 ## 参考記事
 
