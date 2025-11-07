@@ -234,7 +234,7 @@ renovate の [minimumReleaseAge](https://docs.renovatebot.com/configuration-opti
 
 ## おわりに
 
-長々と手順を解説してきましたが、設定自体は数も少なくシンプルです。記事を見ながら設定してきた場合は[サンプルリポジトリ](https://github.com/tacrew/npm-package-lock-sample)を参照して抜け漏れチェックにご活用ください。
+長々と手順を解説してきましたが、設定自体は数も少なくシンプルです。記事を見ながら設定をしたら最後に[サンプルリポジトリ](https://github.com/tacrew/npm-package-lock-sample)を参照して、抜け漏れがないか確認してみてください。
 
 また、CI を利用するほどでもないリポジトリの場合は husky 等を利用して precommit 時に `lint:package` を走らせるなどのアレンジも可能です。例えば zenn の記事を管理する[弊社テンプレ](https://github.com/0xmakase/zenn-articles)ではこのアレンジを採用しています。
 
