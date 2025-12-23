@@ -3,8 +3,9 @@ title: "npmのサプライチェーン攻撃に備えてやったこと【サン
 emoji: "🛡️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["npm", "pnpm", "security", "package", "nodejs"]
-published: false
+published: true
 publication_name: omakase
+published_at: 2025-12-24 15:00
 ---
 
 npm まわりでサプライチェーン攻撃が頻発していますね。直近でいうと以下の 3 件が立て続けに発生しています。
