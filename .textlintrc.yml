@@ -10,10 +10,6 @@ rules:
     sentence-length:
       max: 200
   preset-ja-spacing: # 和文/欧文の空白・記号の間隔ルールのプリセット
-    ja-space-around-code:
-      before: true
-      after: true
-    ja-space-around-link: false
     ja-space-between-half-and-full-width: # 全角と半角の間のスペース有無（preset 内サブルールを上書き）
       space: "always"
   textlint-rule-no-dropping-the-ra: true # 「ら抜き言葉」を検出
